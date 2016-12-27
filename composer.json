@@ -1,0 +1,16 @@
+{
+    "name": "swiftotter/attribute-product-uses",
+    "description": "SwiftOtter's base module with helper functions to support other modules.",
+    "version": "1.0",
+    "type": "magento-module",
+    "require": {
+        "swiftotter/base": "*:",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name": "Joseph Maxwell",
+            "email": "joseph@swiftotter.com"
+        }
+    ]
+}

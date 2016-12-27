@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_attribute_use_product>
+        <block type="SwiftOtter_AttributeProductUses/Adminhtml_Attribute_Catalog_Product_Uses" name="root" output="toHtml" />
+    </adminhtml_attribute_use_product>
+
+    <adminhtml_attribute_use_productgrid>
+        <block type="SwiftOtter_AttributeProductUses/Adminhtml_Attribute_Catalog_Product_Uses_Grid" name="root" output="toHtml" />
+    </adminhtml_attribute_use_productgrid>
+
+    <adminhtml_catalog_product_attribute_edit>
+        <reference name="left">
+            <reference name="attribute_edit_tabs">
+                <block type="SwiftOtter_AttributeProductUses/Adminhtml_Attribute_Catalog_Product_Uses" name="tab_attribute_product_uses"/>
+                <action method="addTabAfter">
+                    <name>uses</name>
+                    <block>tab_attribute_product_uses</block>
+                    <after>labels</after>
+                </action>
+            </reference>
+        </reference>
+    </adminhtml_catalog_product_attribute_edit>
+</layout>

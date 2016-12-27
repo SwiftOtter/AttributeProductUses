@@ -1,0 +1,67 @@
+<config>
+    <modules>
+        <SwiftOtter_AttributeProductUses>
+            <version>1</version>
+        </SwiftOtter_AttributeProductUses>
+    </modules>
+
+    <global>
+        <helpers>
+            <SwiftOtter_AttributeProductUses>
+                <class>SwiftOtter_AttributeProductUses_Helper</class>
+            </SwiftOtter_AttributeProductUses>
+        </helpers>
+
+        <blocks>
+            <SwiftOtter_AttributeProductUses>
+                <class>SwiftOtter_AttributeProductUses_Block</class>
+            </SwiftOtter_AttributeProductUses>
+        </blocks>
+
+        <models>
+            <SwiftOtter_AttributeProductUses>
+                <class>SwiftOtter_AttributeProductUses_Model</class>
+                <resourceModel>SwiftOtter_AttributeProductUses_Resource</resourceModel>
+            </SwiftOtter_AttributeProductUses>
+            <SwiftOtter_AttributeProductUses_Resource>
+                <class>SwiftOtter_AttributeProductUses_Model_Resource</class>
+            </SwiftOtter_AttributeProductUses_Resource>
+            <eav_resource>
+                <rewrite>
+                    <entity_attribute_option_collection>SwiftOtter_AttributeProductUses_Model_Resource_Eav_Entity_Attribute_Option_Collection</entity_attribute_option_collection>
+                </rewrite>
+            </eav_resource>
+        </models>
+
+        <resources>
+            <SwiftOtter_AttributeProductUses>
+                <setup>
+                    <module>SwiftOtter_AttributeProductUses</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </SwiftOtter_AttributeProductUses>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <SwiftOtter_AttributeProductUses extends="Mage_Adminhtml">SwiftOtter_AttributeProductUses</SwiftOtter_AttributeProductUses>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <SwiftOtter_AttributeProductUses>
+                    <file>SwiftOtter/Attribute.xml</file>
+                </SwiftOtter_AttributeProductUses>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

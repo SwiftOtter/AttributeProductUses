@@ -1,0 +1,3 @@
+app/code/community/SwiftOtter/AttributeProductUses              app/code/community/SwiftOtter/AttributeProductUses
+app/design/adminhtml/default/default/layout/SwiftOtter/*        app/design/adminhtml/default/default/layout/SwiftOtter/
+app/etc/modules/*                                               app/etc/modules/
